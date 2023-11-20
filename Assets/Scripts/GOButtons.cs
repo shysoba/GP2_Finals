@@ -3,14 +3,15 @@ using UnityEngine.SceneManagement;
 
 public class GOButtons : MonoBehaviour
 {
-    public void PlayAgain()
+    public LevelLoader levelLoader;
+
+    public void Home()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        levelLoader.LoadScene(2);
     }
 
     public void ExitGame()
     {
         Application.Quit();
     }
-
 }

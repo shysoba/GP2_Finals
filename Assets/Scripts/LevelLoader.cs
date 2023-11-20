@@ -11,7 +11,7 @@ public class LevelLoader : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("PlayGame"))
+        if (Input.GetButtonDown("Play"))
         {
             LoadNextLevel();
         }
